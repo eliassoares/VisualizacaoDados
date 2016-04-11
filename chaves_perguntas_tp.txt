@@ -1,0 +1,13 @@
+Chaves
+
+Base:
+
+HEDU:
+[ ] Anos disponíveis
+[ ] Universidades disponíveis
+[ ] Estados da Federação Possíveis
+[ ] Cursos disponíveis
+[ ] Quantidade de alunos
+
+RAIS:
+
