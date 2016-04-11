@@ -11,7 +11,9 @@ def retornaJson(link):
 		except:
 			print "Erro na conexao:",link
 
-
+		conexoes += 1
+	return None
+	
 if __name__ == '__main__':
 	linkBase = 'http://en.dataviva.info'
 	pesquisa = '/rais/2012/4mg.show.9/all/all/'
