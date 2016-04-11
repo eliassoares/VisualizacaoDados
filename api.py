@@ -2,11 +2,20 @@
 import requests
 import json
 
-linkBase = 'http://en.dataviva.info'
+def retornaJson(link):
+	conexoes = 0
+	while conexoes < 100:
+		try:
+			req = requests.get(link)
+			return json.loads(req.content)
+		except:
+			print "Erro na conexao:",link
 
-pesquisa = '/rais/2012/4mg.show.9/all/all/'
 
-requisicao = requests.get(linkBase + pesquisa)
-dicionarioJson = json.loads(requisicao.content)
+if __name__ == '__main__':
+	linkBase = 'http://en.dataviva.info'
+	pesquisa = '/rais/2012/4mg.show.9/all/all/'
 
-print dicionarioJson
+	dicionarioJson = retornaJson(linkBase + pesquisa)
+
+	print dicionarioJson
