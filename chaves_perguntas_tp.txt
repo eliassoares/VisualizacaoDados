@@ -3,9 +3,13 @@ Chaves
 Base:
 
 HEDU:
-[ ] Anos disponíveis
-[ ] Universidades disponíveis
+[x] Anos disponíveis
+2009, ..., 2013
+[x] Universidades disponíveis
+* Encontrado na tabela attrs_university
+* Baixamos os resultados e colocamos no repositório
 [ ] Estados da Federação Possíveis
+
 [ ] Cursos disponíveis
 [ ] Quantidade de alunos
 
