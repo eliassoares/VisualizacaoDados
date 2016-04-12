@@ -1,5 +1,5 @@
-# crawlerDataViva
-Crawler para receber os dados da API do Dada Viva.
+# VisualizacaoDados
+Repositório da Disciplina de Visualização de Dados.
 
 Links importantes:
 
