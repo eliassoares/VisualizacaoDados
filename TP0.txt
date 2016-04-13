@@ -1,9 +1,0 @@
-TP0 Análise Crítica do Data Viva:
-
-Depois editamos tudo corretamente, esse arquivo é apenas para irmos adicionando as críticas.
-
-Imagem: Critica1.png
-	Link:http://pt.dataviva.info/apps/builder/network/secex/4mg/all/all/hs/?controls=true&year=2014&size=export_val&spotlight=true&rca_scope=bra_rca&color=color
-
-	Usabilidade ruim, não permite que você navegue facilmente pela rede quando o zoom está pouco, 
-	há pouco espaço para a visualização, os menus tomam quase todo o espaço visual, além disso, ao clicar em algum item, um pequeno menu será aberto no lado direito, tomando o pouco espaço que a visualização tem.
