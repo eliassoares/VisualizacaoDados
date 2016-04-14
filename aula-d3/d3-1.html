@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplo D3</title>
+    <script src="js/vendor/d3.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <style>
+      .d3codeExample {
+        font-family: monospace;
+        color: #888888;
+        font-size: 13px;
+        max-width: 100%;
+      }
+    </style>
+
+    <h3>D3</h3>
+    <div>
+      <ul>
+        <li>Padrões web</li>
+        <li>Voltado a dados</li>
+        <li>As visualizações são imagens em formato SVG</li>
+        <li>Formatos: CSV e JSON</li>
+        <li>Livro: D3.js in Action</li>
+        <li>D3 te dá o poder de criar suas próprias técnicas e visualizações avançadas</li>
+        <li>Para gráficos simples existem bibliotecas mais convenientes</li>
+      </ul>
+
+      <h3>Passos da visualização</h3>
+      <ol>
+        <li>Coletar e processar os dados</li>
+        <li>Cria a estrutura da visualização</li>
+        <li>Desenha a visualização</li>
+      </ol>
+
+      <h3>Example</h3>
+      
+      <pre class="d3codeExample">
+        d3.selectAll("div")
+          .data(someData)    // Data binding
+          .enter()
+          .append("div")
+          .html("Wow")
+          .append("span")
+          .html("Even More Wow")
+          .style("font-weight", "900")
+      </pre>
+    </div>
+
+    <div id="visualizacoes">
+      <div id="olad3">
+        <div id="container-grafico">
+          <script src="js/olaD3.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
