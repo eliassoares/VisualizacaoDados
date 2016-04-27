@@ -19,14 +19,14 @@ def retornaJson(link):
 def pegaAnoRegiao():
 	#descricao da URL:
 	#http://en.dataviva.info/hedu/identificacao_ano/identificacao_regiao/identificacao_universidade/show/
-	#Colocando 'all' no lugar dos identificadores, voce pega os identificadores.
+	#Colocando 'all' no lugar dos identificadores, voce pega todos os identificadores.
 	linkBase = 'http://en.dataviva.info'
 
 	dicionarioAnoRegiao = {}
 	for regiao in range(1,6):
 		pesquisa = '/hedu/all/' + str(regiao) + '/all/show/'
 
-		#"headers": ["enrolled", "graduates", "entrants", "morning", "afternoon", "night", "full_time", "age", "graduates_growth", "enrolled_growth", "year", "course_hedu_id"]
+		#"headers": ["enrolled", "graduates", "entrants", "morning", "afternoon", "night", "full_time", "age", "graduates_growth", "enrolled_growth", "year", "bra_id", "course_hedu_id"]
 		respostaJson = retornaJson(linkBase + pesquisa)
 		for i in respostaJson['data']:
 			ano = int(i[10])
