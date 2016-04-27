@@ -35,10 +35,6 @@ def pegaAnoRegiao():
 			dicionarioAnoRegiao.setdefault(ano, {}).setdefault(regiao, [0, 0])
 			dicionarioAnoRegiao[ano][regiao][0] += graduates
 			dicionarioAnoRegiao[ano][regiao][1] += entrants
-		
-			
-
-
 	return dicionarioAnoRegiao
 
 if __name__ == '__main__':
