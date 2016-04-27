@@ -25,6 +25,8 @@ def pegaAnoRegiao():
 	dicionarioAnoRegiao = {}
 	for regiao in range(1,6):
 		pesquisa = '/hedu/all/' + str(regiao) + '/all/show/'
+
+		#"headers": ["enrolled", "graduates", "entrants", "morning", "afternoon", "night", "full_time", "age", "graduates_growth", "enrolled_growth", "year", "course_hedu_id"]
 		respostaJson = retornaJson(linkBase + pesquisa)
 		for i in respostaJson['data']:
 			ano = int(i[10])
