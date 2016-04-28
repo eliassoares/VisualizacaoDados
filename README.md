@@ -12,3 +12,8 @@ Descrição da URL:
 	-http://en.dataviva.info/hedu/identificacao_ano/identificacao_regiao/identificacao_universidade/show/
 	
 	-Colocando 'all' no lugar dos identificadores, você pega os identificadores.
+	
+Para a pergunta 1, encontramos uma possível visualização, ver link abaixo:
+	-http://bl.ocks.org/anupsavvy/9513382
+	
+	
