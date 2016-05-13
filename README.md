@@ -20,3 +20,6 @@ Para a pergunta 1, encontramos uma possível visualização, ver link abaixo:
 Link acesso à base:
 
 	-http://infovis.dcc.ufmg.br/phpmyadmin/
+Link para acesso a visualizações neste link
+
+https://public.tableau.com/profile/ghapereira#!/vizhome/Vis1-Entradas-Saidas-Uni/Sheet2
