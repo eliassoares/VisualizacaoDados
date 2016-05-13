@@ -1,0 +1,19 @@
+id	name_en	                         desc_en keywords_en	name_pt	desc_pt	keywords_pt	gender_pt	plural_pt	article_pt	color
+146F05	Computer (IT) teacher education	 NULL	 NULL		Formação de professor de computação (informática)	 NULL	 NULL	 NULL	1	0	#cc0000
+461M03	Computational mathematics	 NULL	 NULL		Matemática computacional (informática)	 NULL	 NULL	 NULL	1	0	#408e60
+48	Computer Sciences	 	 NULL	 NULL	        Ciências da Computação	 NULL	 NULL	 NULL	0	0	#8beae3
+481A02	Computer architecture	 	 NULL	 NULL	        Arquitetura de computadores	 NULL	 NULL	 NULL	1	0	#8beae3
+481C01	Computer science	 	 NULL	 NULL	        Ciência da computação	 NULL	 NULL	 NULL	1	0	#8beae3
+481C02	Computer graphics	 	 NULL	 NULL	        Computação gráfica	 NULL	 NULL	 NULL	1	0	#8beae3
+481E01	Computer engineering (hardware)	 NULL	 NULL		Engenharia de computação (hardware)	 NULL	 NULL	 NULL	1	0	#8beae3
+481I01	Science of information	 	 NULL	 NULL	        Informática (ciência da computação)	 NULL	 NULL	 NULL	1	0	#8beae3
+483P02	Computer programming	 	 NULL	 NULL	        Programação de computadores	 NULL	 NULL	 NULL	1	0	#8beae3
+523E04	Computer engineering	 	 NULL	 NULL	        Engenharia de computação	 NULL	 NULL	 NULL	1	0	#17bcef
+523R01	Computer networks	 	 NULL	 NULL	        Redes de computadores	 NULL	 NULL	 NULL	1	0	#17bcef
+345A05	Management of systems analysis /information technology	Administração em análise de sistemas / informática	 NULL	 NULL	 NULL	1	0	#b7834b
+345A21	Information systems management	 NULL	 NULL		Administração de sistemas de informações	 NULL	 NULL	 NULL	1	0	#b7834b
+481S01	Operational systems	 	 NULL	 NULL	        Sistemas operacionais	 NULL	 NULL	 NULL	1	0	#8beae3
+483A01	Systems analysis	 	 NULL	 NULL	        Análise de sistemas	 NULL	 NULL	 NULL	1	0	#8beae3
+483A02	Systems analysis and development (technologist)	        Análise e Desenvolvimento de Sistemas (Tecnólogo)	 NULL	 NULL	 NULL	1	0	#8beae3
+483S02	Information systems		 NULL	 NULL	        Sistemas de informação	 NULL	 NULL	 NULL	1	0	#8beae3
+
