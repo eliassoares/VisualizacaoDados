@@ -17,3 +17,6 @@ Para a pergunta 1, encontramos uma possível visualização, ver link abaixo:
 	-http://bl.ocks.org/anupsavvy/9513382
 	
 	
+Link acesso à base:
+
+	-http://infovis.dcc.ufmg.br/phpmyadmin/
