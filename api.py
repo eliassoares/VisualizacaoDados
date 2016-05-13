@@ -1,4 +1,8 @@
+#!/usr/bin/env python
+# *-* coding: utf-8 *-*
+
 #11/04/16
+#coding
 import requests
 import json
 linkBase = 'http://en.dataviva.info'
@@ -79,16 +83,16 @@ def pergunta4_5():
 	#pergunta 4:
 	aux1 = {}
 	for i in p[288:298]:
-		aux1[i[0]] = dicionarioCursos[i[0]]
+		aux1[dicionarioCursos[i[0]][0]] = [dicionarioCursos[i[0]][1], dicionarioCursos[i[0]][2]]
 
 	with open('pergunta4.json', 'wb') as file:
 		js = json.dumps(aux1, ensure_ascii=False)
 		json.dump(js, file)
 
-	#pergunt 5:
+	#pergunta 5:
 	aux1 = {}
 	for i in p[-10:]:
-		aux1[i[0]] = dicionarioCursos[i[0]]
+		aux1[dicionarioCursos[i[0]][0]] = [dicionarioCursos[i[0]][1], dicionarioCursos[i[0]][2]]
 
 	with open('pergunta5.json', 'wb') as file:
 		js = json.dumps(aux1, ensure_ascii=False)
