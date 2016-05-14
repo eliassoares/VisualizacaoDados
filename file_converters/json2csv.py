@@ -4,10 +4,10 @@ import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-# The structure of the CSV will be:
-# YEAR | CODE | ENTRANT | LEAVING
 
 def converte_pergunta_1():
+    # The structure of the CSV will be:
+    # YEAR | CODE | ENTRANT | LEAVING
     SRC_FILENAME = 'pergunta1.json'
 
     with open(SRC_FILENAME, 'r') as fp:
