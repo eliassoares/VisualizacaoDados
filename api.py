@@ -15,7 +15,7 @@ def retornaJson(link):
 			req = requests.get(link)
 			return json.loads(req.content)
 		except:
-			print "Erro na conexao:",link
+			print conexao,"Erro na conexao:",link
 
 		conexoes += 1
 	return None
@@ -40,14 +40,59 @@ def pergunta1():
 	with open('pergunta1.json', 'wb') as file:
 		json.dump(js, file)
 
-#As 10 faculdades com maior proporcao entraram/sairam
-def pergunta2():
-	pass
-
 #As 10 faculdades com menor proporcao entraram/sairam
-def pergunta3():
-	pass
+#As 10 faculdades com maior proporcao entraram/sairam
+def pergunta2_3():
+	universidades = {}
+	proporcoes = {}
+	with open('attrs_university.csv', 'rb') as u:
+		for un in u:
+			aux0 = un.split(',')
+			idUniversidade = aux0[0].strip('\"')
+			nome = aux0[1].strip('\"')
+			universidades.setdefault(idUniversidade, [])
+			universidades[idUniversidade] = [nome, 0, 0]
+			proporcoes[idUniversidade] = 0.
 
+	for idUniversidade in universidades:
+		pesquisa = '/hedu/all/all/'+ idUniversidade + '/show/'
+		respostaJson = retornaJson(linkBase + pesquisa)
+		print universidades[idUniversidade][0]
+		for i in respostaJson['data']:
+			entrants = int(i[2])
+			graduates = int(i[1])
+			universidades[idUniversidade][1] += entrants
+			universidades[idUniversidade][2] += graduates
+			try:
+				proporcoes[idUniversidade] += float(entrants) / graduates
+			except ZeroDivisionError:
+				pass
+	p = sorted(proporcoes.items(), key=lambda x: x[1])
+	
+	#pergunta 2
+	#procurando o primeiro onde a proporcao e diferente de zero
+	aux0 = []
+	for i in p:
+		if (i[1] != 0.0):
+			aux0.append(i[0])
+		if(len(aux0) == 10):
+			break
+
+	aux1 = {}
+	for i in aux0:
+		aux1[universidades[i][0]] = [universidades[i][1], universidades[i][2]]
+
+	with open('pergunta2.json', 'wb') as file:
+		js = json.dumps(aux1, ensure_ascii=False)
+		json.dump(js, file)
+	
+	aux1 = {}
+	for i in p[-10:]:
+		aux1[universidades[i[0]][0]] = [universidades[i[0]][1], universidades[i[0]][2]]
+	
+	with open('pergunta3.json', 'wb') as file:
+		js = json.dumps(aux1, ensure_ascii=False)
+		json.dump(js, file)
 
 #As 10 cursos com menor proporcao entraram/sairam
 #As 10 cursos com maior proporcao entraram/sairam
@@ -69,12 +114,12 @@ def pergunta4_5():
 		respostaJson = retornaJson(linkBase + pesquisa)
 		for i in respostaJson['data']:
 			idCurso = i[12]
-			entrants = i[2]
-			graduates = i[1]
-			dicionarioCursos[idCurso][1] += int(entrants)
-			dicionarioCursos[idCurso][2] += int(graduates)
+			entrants = int(i[2])
+			graduates = int(i[1])
+			dicionarioCursos[idCurso][1] += entrants
+			dicionarioCursos[idCurso][2] += graduates
 			try:
-				proporcoes[idCurso] += float(entrants)/float(graduates)
+				proporcoes[idCurso] += float(entrants)/graduates
 			except ZeroDivisionError:
 				pass
 
@@ -82,6 +127,7 @@ def pergunta4_5():
 
 	#pergunta 4:
 	aux1 = {}
+	#da posicao 0 a 287 sao zeros:
 	for i in p[288:298]:
 		aux1[dicionarioCursos[i[0]][0]] = [dicionarioCursos[i[0]][1], dicionarioCursos[i[0]][2]]
 
@@ -102,5 +148,7 @@ def pergunta4_5():
 #Quantidade de formandos e empregadas em computacao por ano
 def pergunta6():
 	pass
+
 if __name__ == '__main__':
 	pergunta4_5()
+	pergunta2_3()
