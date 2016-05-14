@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9300.16.0315.0125                                -->
+<workbook source-build='9.3.0 (9300.16.0315.0125)' source-platform='win' version='9.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pergunta6' inline='true' name='textscan.0a4rv9h0xonx8q1brdwya0g4rb1y' version='9.3'>
+      <connection class='textscan' directory='C:/Users/Rodrigo/Downloads' filename='pergunta6.csv' password='' server=''>
+        <relation name='pergunta6.csv' table='[pergunta6#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+            <column datatype='integer' name='Ano' ordinal='0' />
+            <column datatype='integer' name='Entrantes' ordinal='1' />
+            <column datatype='integer' name='Graduates' ordinal='2' />
+            <column datatype='integer' name='NumJobs' ordinal='3' />
+            <column datatype='integer' name='DiferencaNumJobsAno' ordinal='4' />
+            <column datatype='integer' name='DiferencaGraduatesJobs' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ano]</local-name>
+            <parent-name>[pergunta6.csv]</parent-name>
+            <remote-alias>Ano</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entrantes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Entrantes]</local-name>
+            <parent-name>[pergunta6.csv]</parent-name>
+            <remote-alias>Entrantes</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Graduates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Graduates]</local-name>
+            <parent-name>[pergunta6.csv]</parent-name>
+            <remote-alias>Graduates</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumJobs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumJobs]</local-name>
+            <parent-name>[pergunta6.csv]</parent-name>
+            <remote-alias>NumJobs</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiferencaNumJobsAno</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DiferencaNumJobsAno]</local-name>
+            <parent-name>[pergunta6.csv]</parent-name>
+            <remote-alias>DiferencaNumJobsAno</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiferencaGraduatesJobs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DiferencaGraduatesJobs]</local-name>
+            <parent-name>[pergunta6.csv]</parent-name>
+            <remote-alias>DiferencaGraduatesJobs</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pergunta6.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='integer' hidden='true' name='[Ano]' role='measure' type='quantitative' />
+      <column caption='Ano' datatype='date' name='[Calculation_520165771860164609]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKEDATE([Ano],1,1)' />
+      </column>
+      <column datatype='integer' name='[Entrantes]' role='measure' type='quantitative' />
+      <column caption='Graduados' datatype='integer' name='[Graduates]' role='measure' type='quantitative' />
+      <column caption='Empregados' datatype='integer' name='[NumJobs]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Entrantes]' derivation='Sum' name='[sum:Entrantes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Graduates]' derivation='Sum' name='[sum:Graduates:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NumJobs]' derivation='Sum' name='[sum:NumJobs:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\Rodrigo\Downloads\pergunta6.tde' schema='Extract' tablename='Extract' update-time='05/14/2016 10:47:18 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Calculation_520165771860164609]' formula='MAKEDATE([Ano],1,1)' />
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='5' timestamp-start='2016-05-14 22:47:18.729' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Ano</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Ano]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ano</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pergunta6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>10055.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>2011.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>2009</statistic>
+                <statistic aggregation='Max' datatype='integer'>2013</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1.5811388300841898</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1.4142135623730951</statistic>
+                <statistic aggregation='Var' datatype='real'>2.5</statistic>
+                <statistic aggregation='VarP' datatype='real'>2.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+                <statistic aggregation='Median' datatype='integer'>2011</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>20220615.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DiferencaGraduatesJobs</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[DiferencaGraduatesJobs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DiferencaGraduatesJobs</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pergunta6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>248570.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>49714.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>37432</statistic>
+                <statistic aggregation='Max' datatype='integer'>79610</statistic>
+                <statistic aggregation='Stdev' datatype='real'>17324.136962631066</statistic>
+                <statistic aggregation='StdevP' datatype='real'>15495.17915998392</statistic>
+                <statistic aggregation='Var' datatype='real'>300125721.5</statistic>
+                <statistic aggregation='VarP' datatype='real'>240100577.19999999</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+                <statistic aggregation='Median' datatype='integer'>45438</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>13557911866.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DiferencaNumJobsAno</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[DiferencaNumJobsAno]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DiferencaNumJobsAno</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pergunta6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>95392.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>19078.400000000001</statistic>
+                <statistic aggregation='Min' datatype='integer'>-12469</statistic>
+                <statistic aggregation='Max' datatype='integer'>32848</statistic>
+                <statistic aggregation='Stdev' datatype='real'>18158.241580615675</statistic>
+                <statistic aggregation='StdevP' datatype='real'>16241.22501044795</statistic>
+                <statistic aggregation='Var' datatype='real'>329721737.30000001</statistic>
+                <statistic aggregation='VarP' datatype='real'>263777389.84</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>3138813682.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entrantes</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Entrantes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entrantes</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pergunta6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1040299.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>208059.79999999999</statistic>
+                <statistic aggregation='Min' datatype='integer'>190929</statistic>
+                <statistic aggregation='Max' datatype='integer'>226274</statistic>
+                <statistic aggregation='Stdev' datatype='real'>14996.624593554377</statistic>
+                <statistic aggregation='StdevP' datatype='real'>13413.388809693097</statistic>
+                <statistic aggregation='Var' datatype='real'>224898749.19999999</statistic>
+                <statistic aggregation='VarP' datatype='real'>179918999.36000001</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>217343996877.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Graduates</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Graduates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Graduates</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pergunta6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>343962.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>68792.399999999994</statistic>
+                <statistic aggregation='Min' datatype='integer'>65901</statistic>
+                <statistic aggregation='Max' datatype='integer'>71022</statistic>
+                <statistic aggregation='Stdev' datatype='real'>2279.3731155736659</statistic>
+                <statistic aggregation='StdevP' datatype='real'>2038.7332930032806</statistic>
+                <statistic aggregation='Var' datatype='real'>5195541.7999999998</statistic>
+                <statistic aggregation='VarP' datatype='real'>4156433.4399999999</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>23682753656.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NumJobs</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[NumJobs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NumJobs</remote-alias>
+              <ordinal>5</ordinal>
+              <family>pergunta6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1815144.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>363028.79999999999</statistic>
+                <statistic aggregation='Min' datatype='integer'>330154</statistic>
+                <statistic aggregation='Max' datatype='integer'>399962</statistic>
+                <statistic aggregation='Stdev' datatype='real'>25848.608061170336</statistic>
+                <statistic aggregation='StdevP' datatype='real'>23119.697899410363</statistic>
+                <statistic aggregation='Var' datatype='real'>668150538.70000005</statistic>
+                <statistic aggregation='VarP' datatype='real'>534520430.95999998</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>661622150302.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>6</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>5.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calculation_520165771860164609</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Calculation_520165771860164609]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_520165771860164609</remote-alias>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='date'>#2009-01-01#</statistic>
+                <statistic aggregation='Max' datatype='date'>#2013-01-01#</statistic>
+                <statistic aggregation='Count' datatype='integer'>5</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.501961' measure-ordering='alphabetic' measure-percentage='0.498039' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[sum:Graduates:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[sum:Entrantes:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[sum:NumJobs:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Ano' />
+        <field-sort-custom-order field='Calculation_520165771860164609' />
+        <field-sort-custom-order field='Entrantes' />
+        <field-sort-custom-order field='Graduates' />
+        <field-sort-custom-order field='NumJobs' />
+        <field-sort-custom-order field='DiferencaNumJobsAno' />
+        <field-sort-custom-order field='DiferencaGraduatesJobs' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Quantidade de empregados e graduados na área de computação por ano</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pergunta6' name='textscan.0a4rv9h0xonx8q1brdwya0g4rb1y' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.0a4rv9h0xonx8q1brdwya0g4rb1y'>
+            <column caption='Year' datatype='integer' hidden='true' name='[Ano]' role='measure' type='quantitative' />
+            <column caption='Ano' datatype='date' name='[Calculation_520165771860164609]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKEDATE([Ano],1,1)' />
+            </column>
+            <column caption='Graduados' datatype='integer' name='[Graduates]' role='measure' type='quantitative' />
+            <column caption='Empregados' datatype='integer' name='[NumJobs]' role='measure' type='quantitative' />
+            <column-instance column='[Graduates]' derivation='Sum' name='[sum:Graduates:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NumJobs]' derivation='Sum' name='[sum:NumJobs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_520165771860164609]' derivation='Year-Trunc' name='[tyr:Calculation_520165771860164609:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[sum:Graduates:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[sum:NumJobs:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[Multiple Values]' scope='rows' value='Número de pessoas' />
+            <format attr='subtitle' class='0' field='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[Multiple Values]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[Multiple Values]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[tyr:Calculation_520165771860164609:qk]' scope='cols' value='Ano' />
+            <format attr='subtitle' class='0' field='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[tyr:Calculation_520165771860164609:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[tyr:Calculation_520165771860164609:qk]' scope='cols' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[Multiple Values]</rows>
+        <cols>[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[tyr:Calculation_520165771860164609:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='28'>
+    <window class='worksheet' maximized='true' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='1' param='[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[:Measure Names]</field>
+            <field>[textscan.0a4rv9h0xonx8q1brdwya0g4rb1y].[yr:Calculation_520165771860164609:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Planilha 1' width='192'>
+      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
+      UPt/kii6xSeQB1cAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
