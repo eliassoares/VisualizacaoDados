@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9300.16.0315.0125                                -->
+<workbook source-build='9.3.0 (9300.16.0315.0125)' source-platform='win' version='9.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pergunta1' inline='true' name='textscan.1uonttq0yne3a918y6p330ek4w39' version='9.3'>
+      <connection class='textscan' directory='C:/Users/Rodrigo/Downloads' filename='pergunta1.csv' password='' server=''>
+        <relation name='pergunta1.csv' table='[pergunta1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR'>
+            <column datatype='string' name='Year,Code,Leaving,Entrant' ordinal='0' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year,Code,Leaving,Entrant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year,Code,Leaving,Entrant]</local-name>
+            <parent-name>[pergunta1.csv]</parent-name>
+            <remote-alias>Year,Code,Leaving,Entrant</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pergunta1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ano' datatype='date' name='[Calculation_559009318624178176]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKEDATE([Year,Code,Leaving,Entrant - Divisão 1],1,1)' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Year' datatype='integer' datatype-customized='true' name='[Year,Code,Leaving,Entrant - Divisão 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[textscan.1uonttq0yne3a918y6p330ek4w39].[Year,Code,Leaving,Entrant]'>
+        <calculation class='tableau' formula='INT(TRIM( SPLIT( [Year,Code,Leaving,Entrant], &quot;,&quot;, 1 ) ))' />
+      </column>
+      <column caption='Code' datatype='integer' datatype-customized='true' name='[Year,Code,Leaving,Entrant - Divisão 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[textscan.1uonttq0yne3a918y6p330ek4w39].[Year,Code,Leaving,Entrant]'>
+        <calculation class='tableau' formula='INT(TRIM( SPLIT( [Year,Code,Leaving,Entrant], &quot;,&quot;, 2 ) ))' />
+      </column>
+      <column caption='Graduandos' datatype='integer' datatype-customized='true' name='[Year,Code,Leaving,Entrant - Divisão 3]' role='measure' type='quantitative' user:SplitFieldIndex='3' user:SplitFieldOrigin='[textscan.1uonttq0yne3a918y6p330ek4w39].[Year,Code,Leaving,Entrant]'>
+        <calculation class='tableau' formula='INT(TRIM( SPLIT( [Year,Code,Leaving,Entrant], &quot;,&quot;, 3 ) ))' />
+      </column>
+      <column caption='Entrantes' datatype='integer' datatype-customized='true' name='[Year,Code,Leaving,Entrant - Divisão 4]' role='measure' type='quantitative' user:SplitFieldIndex='4' user:SplitFieldOrigin='[textscan.1uonttq0yne3a918y6p330ek4w39].[Year,Code,Leaving,Entrant]'>
+        <calculation class='tableau' formula='INT(TRIM( SPLIT( [Year,Code,Leaving,Entrant], &quot;,&quot;, 4 ) ))' />
+      </column>
+      <column datatype='string' hidden='true' name='[Year,Code,Leaving,Entrant]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.501961' measure-ordering='alphabetic' measure-percentage='0.498039' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Year,Code,Leaving,Entrant - Divisão 1' />
+        <field-sort-custom-order field='Calculation_559009318624178176' />
+        <field-sort-custom-order field='Year,Code,Leaving,Entrant - Divisão 2' />
+        <field-sort-custom-order field='Year,Code,Leaving,Entrant - Divisão 3' />
+        <field-sort-custom-order field='Year,Code,Leaving,Entrant - Divisão 4' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Número de alunos entrantes e graduandos por ano&#10;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text />
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pergunta1' name='textscan.1uonttq0yne3a918y6p330ek4w39' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.1uonttq0yne3a918y6p330ek4w39'>
+            <column caption='Ano' datatype='date' name='[Calculation_559009318624178176]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKEDATE([Year,Code,Leaving,Entrant - Divisão 1],1,1)' />
+            </column>
+            <column caption='Year' datatype='integer' datatype-customized='true' name='[Year,Code,Leaving,Entrant - Divisão 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[textscan.1uonttq0yne3a918y6p330ek4w39].[Year,Code,Leaving,Entrant]'>
+              <calculation class='tableau' formula='INT(TRIM( SPLIT( [Year,Code,Leaving,Entrant], &quot;,&quot;, 1 ) ))' />
+            </column>
+            <column caption='Graduandos' datatype='integer' datatype-customized='true' name='[Year,Code,Leaving,Entrant - Divisão 3]' role='measure' type='quantitative' user:SplitFieldIndex='3' user:SplitFieldOrigin='[textscan.1uonttq0yne3a918y6p330ek4w39].[Year,Code,Leaving,Entrant]'>
+              <calculation class='tableau' formula='INT(TRIM( SPLIT( [Year,Code,Leaving,Entrant], &quot;,&quot;, 3 ) ))' />
+            </column>
+            <column caption='Entrantes' datatype='integer' datatype-customized='true' name='[Year,Code,Leaving,Entrant - Divisão 4]' role='measure' type='quantitative' user:SplitFieldIndex='4' user:SplitFieldOrigin='[textscan.1uonttq0yne3a918y6p330ek4w39].[Year,Code,Leaving,Entrant]'>
+              <calculation class='tableau' formula='INT(TRIM( SPLIT( [Year,Code,Leaving,Entrant], &quot;,&quot;, 4 ) ))' />
+            </column>
+            <column datatype='string' hidden='true' name='[Year,Code,Leaving,Entrant]' role='dimension' type='nominal' />
+            <column-instance column='[Year,Code,Leaving,Entrant - Divisão 3]' derivation='Sum' name='[sum:Year,Code,Leaving,Entrant - Divisão 3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year,Code,Leaving,Entrant - Divisão 4]' derivation='Sum' name='[sum:Year,Code,Leaving,Entrant - Divisão 4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_559009318624178176]' derivation='Year-Trunc' name='[tyr:Calculation_559009318624178176:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[textscan.1uonttq0yne3a918y6p330ek4w39].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[textscan.1uonttq0yne3a918y6p330ek4w39].[sum:Year,Code,Leaving,Entrant - Divisão 4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[textscan.1uonttq0yne3a918y6p330ek4w39].[sum:Year,Code,Leaving,Entrant - Divisão 3:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.1uonttq0yne3a918y6p330ek4w39].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[tyr:Calculation_559009318624178176:qk]' scope='cols' value='Ano' />
+            <format attr='subtitle' class='0' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[tyr:Calculation_559009318624178176:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[tyr:Calculation_559009318624178176:qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[Multiple Values]' field-type='quantitative' major-origin='0.0' major-spacing='500000.0' minor-origin='0.0' minor-spacing='250000.0' scope='rows' type='space' />
+            <format attr='title' class='0' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[Multiple Values]' scope='rows' value='Alunos' />
+            <format attr='subtitle' class='0' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[Multiple Values]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[Multiple Values]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[textscan.1uonttq0yne3a918y6p330ek4w39].[:Measure Names]' value='Legenda'>
+              <formatted-text>
+                <run>Legenda</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.1uonttq0yne3a918y6p330ek4w39].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.1uonttq0yne3a918y6p330ek4w39].[Multiple Values]</rows>
+        <cols>[textscan.1uonttq0yne3a918y6p330ek4w39].[tyr:Calculation_559009318624178176:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='28'>
+    <window class='worksheet' maximized='true' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='1' param='[textscan.1uonttq0yne3a918y6p330ek4w39].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.1uonttq0yne3a918y6p330ek4w39].[yr:Calculation_559009318624178176:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Planilha 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
