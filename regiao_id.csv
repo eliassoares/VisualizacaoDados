@@ -1,0 +1,8 @@
+id,id_ibge,id_mdic,name_en,name_pt,gender_pt,plural_pt,article_pt,color
+0,NULL,NULL,"Unknown Region","Região Desconhecido",m,0,0,#C7C7C7
+0xx000001,NULL,90,"Unreported Region","Região não declarada",m,0,0,#C7C7C7
+1,NULL,NULL,"North Region","Região Norte",m,0,0,#00994c
+2,NULL,NULL,"Northeast Region","Região Nordeste",m,0,0,#101070
+3,NULL,NULL,"West Central Region","Região Centro-Oeste",m,0,0,#f3e718
+4,NULL,NULL,"Southeast Region","Região Sudeste",m,0,0,#c40008
+5,NULL,NULL,"South Region","Região Sul",m,0,0,#a9d046
