@@ -92,9 +92,13 @@
           <table-calc ordering-type='Rows' />
         </calculation>
       </column>
+      <column datatype='integer' name='[Entrantes]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Graduandos]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
+      <column-instance column='[Entrantes]' derivation='Sum' name='[sum:Entrantes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Graduandos]' derivation='Sum' name='[sum:Graduandos:qk]' pivot='key' type='quantitative' />
       <extract count='-1' enabled='true' units='records'>
         <connection class='dataengine' dbname='/Users/ghapereira/vagrant/visdados/crawlerDataViva/tableau/pergunta4.tde' schema='Extract' tablename='Extract' update-time='05/14/2016 05:39:26 PM'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
@@ -235,6 +239,18 @@
         </connection>
       </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.467601' measure-ordering='alphabetic' measure-percentage='0.532399' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[textscan.0rny50v08jfq4118wckdu1n53tdn].[sum:Entrantes:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[textscan.0rny50v08jfq4118wckdu1n53tdn].[sum:Graduandos:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -298,6 +314,12 @@
             <encodings>
               <color column='[textscan.0rny50v08jfq4118wckdu1n53tdn].[:Measure Names]' />
             </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows>[textscan.0rny50v08jfq4118wckdu1n53tdn].[Multiple Values]</rows>
