@@ -236,7 +236,7 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Sheet 1'>
+    <worksheet name='pergunta3'>
       <table>
         <view>
           <datasources>
@@ -280,7 +280,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='28'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='pergunta3'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -312,7 +312,7 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='384' name='Sheet 1' width='384'>
+    <thumbnail height='384' name='pergunta3' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAAsTAAALEwEAmpwY
       AAAgAElEQVR4nOydd3xUZdb4v3f6THojPUASCOmF0KuAIogddFXW7vruuvZddMWCiKIotnX3
       XRUrSu+gICJNEAikkt5775nJ9Ht/f0woEXAR8PWHzvfzgSQzz73Pc55yz73nOedcQZIkCSdO
