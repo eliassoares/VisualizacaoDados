@@ -1,3 +1,6 @@
 vendor/
 *.swp
 .idea
+.DS_Store
+bower_components
+
