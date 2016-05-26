@@ -12,6 +12,11 @@
     <div id="pergunta3">
       <script async>
         d3.json("dados/pergunta3.json", function(error, data){
+          /* Os dados são obtidos como uma string. Este método JSON.parse
+             os transforma em um objeto Javascript normal, que podemos
+             utilizar como chave/valor, o que é bem natural para quem já
+             programa em Python.
+             */
           let institutionData = JSON.parse(data);
           for(let institution in institutionData) {
             console.log(institution);
@@ -21,3 +26,4 @@
     </div>
   </body>
 </html>
+
