@@ -3,12 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>Visualização de Dados | Trabalho Prático 2</title>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
   </head>
   <body>
-    <script>
-    </script>
-    <p>Texto 1</p>
-    <p>Texto 2</p>
+    <!-- Pergunta 3: Faculdades com maior diferença ingressantes/concluintes -->
+    <!-- <script async src="js/pergunta3.js"></script> -->
+    <div id="pergunta3">
+      <script async>
+        d3.json("dados/pergunta3.json", function(error, data){
+          let institutionData = JSON.parse(data);
+          for(let institution in institutionData) {
+            console.log(institution);
+          }
+        });
+      </script>
+    </div>
   </body>
-    <script src="bower_components/d3/d3.min.js"></script>
 </html>
