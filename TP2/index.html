@@ -5,25 +5,88 @@
     <title>Visualização de Dados | Trabalho Prático 2</title>
     <script src="bower_components/d3/d3.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Pergunta 3: Faculdades com maior diferença ingressantes/concluintes -->
-    <!-- <script async src="js/pergunta3.js"></script> -->
-    <div id="pergunta3">
-      <script async>
-        d3.json("dados/pergunta3.json", function(error, data){
-          /* Os dados são obtidos como uma string. Este método JSON.parse
-             os transforma em um objeto Javascript normal, que podemos
-             utilizar como chave/valor, o que é bem natural para quem já
-             programa em Python.
-             */
-          let institutionData = JSON.parse(data);
-          for(let institution in institutionData) {
-            console.log(institution);
-          }
-        });
-      </script>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Dashboard</a>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- Pergunta 1: ... -->
+        <!-- <script async src="js/pergunta1.js"></script> -->
+        <div id="pergunta1">
+          <h4>Pergunta 1</h4>
+          <script async>
+            /* d3 para pergunta 1 */
+            d3.json("dados/pergunta1.json", function(error, data){
+            });
+          </script>
+        </div>
+      <!-- /.col-lg-6 -->
+      </div>
+
+      <div class="col-lg-6">
+        <!-- Pergunta 2: ... -->
+        <!-- <script async src="js/pergunta2.js"></script> -->
+        <div id="pergunta2">
+          <h4>Pergunta 2</h4>
+          <script async>
+            /* d3 para pergunta 2 */
+            d3.json("dados/pergunta2.json", function(error, data){
+            });
+          </script>
+        </div>
+      <!-- /.col-lg-6 -->
+      </div>
+    <!-- /.row -->
     </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- Pergunta 3: Faculdades com maior diferença ingressantes/concluintes -->
+        <!-- <script async src="js/pergunta3.js"></script> -->
+        <div id="pergunta3">
+          <h4>Pergunta 3</h4>
+          <script async>
+            d3.json("dados/pergunta3.json", function(error, data){
+              /* Os dados são obtidos como uma string. Este método JSON.parse
+                 os transforma em um objeto Javascript normal, que podemos
+                 utilizar como chave/valor, o que é bem natural para quem já
+                 programa em Python.
+                 */
+              let institutionData = JSON.parse(data);
+              for(let institution in institutionData) {
+                console.log(institution);
+              }
+            });
+          </script>
+        </div>
+      <!-- /.col-lg-6 -->
+      </div>
+
+      <div class="col-lg-6">
+        <!-- Pergunta 4: ... -->
+        <!-- <script async src="js/pergunta4.js"></script> -->
+        <div id="pergunta4">
+          <h4>Pergunta 4</h4>
+          <script async>
+            /* d3 para pergunta 4 */
+            d3.json("dados/pergunta4.json", function(error, data){
+            });
+          </script>
+        </div>
+      <!-- /.col-lg-6 -->
+      </div>
+
+    <!-- /.row -->
+    </div>
+
+
   </body>
 </html>
 
