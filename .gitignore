@@ -3,4 +3,4 @@ vendor/
 .idea
 .DS_Store
 bower_components
-
+*.swo

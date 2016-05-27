@@ -18,7 +18,6 @@
     <div class="row">
       <div class="col-lg-6">
         <!-- Pergunta 1: ... -->
-        <!-- <script async src="js/pergunta1.js"></script> -->
         <div id="pergunta1">
           <h4>Pergunta 1</h4>
           <script async>
@@ -49,22 +48,10 @@
     <div class="row">
       <div class="col-lg-6">
         <!-- Pergunta 3: Faculdades com maior diferença ingressantes/concluintes -->
-        <!-- <script async src="js/pergunta3.js"></script> -->
+        <script async src="js/pergunta3.js"></script>
         <div id="pergunta3">
           <h4>Pergunta 3</h4>
-          <script async>
-            d3.json("dados/pergunta3.json", function(error, data){
-              /* Os dados são obtidos como uma string. Este método JSON.parse
-                 os transforma em um objeto Javascript normal, que podemos
-                 utilizar como chave/valor, o que é bem natural para quem já
-                 programa em Python.
-                 */
-              let institutionData = JSON.parse(data);
-              for(let institution in institutionData) {
-                console.log(institution);
-              }
-            });
-          </script>
+          <svg id="chartPergunta3"></svg>
         </div>
       <!-- /.col-lg-6 -->
       </div>
