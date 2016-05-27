@@ -2,7 +2,11 @@
   "name": "tp2-visualizacao-de-dados",
   "homepage": "https://github.com/eliassoares/crawlerDataViva",
   "authors": [
+    "Elias Soares <eliassoares@dcc.ufmg.br>"
+    "Guilherme Oliveira Souza "
     "Gustavo Pereira <ghapereira@gmail.com>"
+    "Lucas Monteiro <lucasmonteiro001@gmail.com>"
+    "Rodrigo Lemos Cardoso <r.lemoscardoso@gmail.com>"
   ],
   "description": "Trabalho Prático da Disciplina de Visualização de Dados, com o objetivo de exibir as feitas no Tableau agora com D3.js",
   "main": "index.html",
