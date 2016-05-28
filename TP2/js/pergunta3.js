@@ -15,49 +15,38 @@ d3.json("dados/pergunta3.json", function(error, data){
      */
   let institutionData = JSON.parse(data);
 
-  // Convert to a table
-  let ingressantes = new Object();
-  let concluintes = new Object();
+  // Converte dados para uma tabela
+  let instNames = new Array();
+  let ingressantes = new Array();
+  let concluintes = new Array();
 
   for(let inst in institutionData) {
-    ingressantes[inst] = institutionData[inst][0];
-    concluintes[inst] = institutionData[inst][1];
+    instNames.push(inst);
+    ingressantes.push(institutionData[inst][0]);
+    concluintes.push(institutionData[inst][1]);
   }
 
-  x.domain([0, d3.max(institutionData, function(d) {return d.value;})]);
-  svgContainer.attr("height", barHeight * Object.keys(institutionData).length);
+  x.domain([0, d3.max(ingressantes)])
+   .range([0, width]);
 
-  let bars = svgContainer.selectAll("g")
+  svgContainer.attr("height", barHeight * instNames.length);
+
+  let bar = svgContainer.selectAll("g")
               .data(ingressantes)
               .enter()
-              .append("g");
+              .append("g")
+              .attr("transform", function(d, i) {return "translate(0," + i * barHeight + ")";});
 
-  bars.append("rect")
-    .attr("x", function(d) {return x(d.value); })
+  bar.append("rect")
+    .attr("width", x)
     .attr("height", barHeight - 1);
 
-  bars.append("text")
-    .attr("x", function(d) {return x(d.value) - 3; })
+  bar.append("text")
+    .attr("x", function(d) {return x(d) - 3;})
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
-    .text(function(d) {return d.value;});
+    .text(function(d) {return d;});
 
-  // Exemplo de JSON com círculos
-  var jsonCircles = [
-    { "x_axis": 30, "y_axis": 30, "radius": 20, "color" : "green" },
-    { "x_axis": 70, "y_axis": 70, "radius": 20, "color" : "purple"},
-    { "x_axis": 110, "y_axis": 100, "radius": 20, "color" : "red"}];
-
-  var circles = svgContainer.selectAll("circle")
-                            .data(jsonCircles)
-                            .enter()
-                            .append("circle");
-
-  var circleAttributes = circles
-                           .attr("cx", function (d) { return d.x_axis; })
-                           .attr("cy", function (d) { return d.y_axis; })
-                           .attr("r", function (d) { return d.radius; })
-                           .style("fill", function(d) { return d.color; });
 });
 }());
 
