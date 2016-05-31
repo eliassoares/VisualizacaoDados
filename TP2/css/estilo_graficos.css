@@ -1,5 +1,4 @@
 body {
-    
     font: 10px, sans-serif;
 }
 
@@ -30,4 +29,9 @@ svg {
 
 .ponto {
     fill: steelblue;
+}
+
+#container-entrantes-graduandos-chart {
+  min-height: 300px;
+  min-width: 600px;
 }
