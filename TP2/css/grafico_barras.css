@@ -1,0 +1,33 @@
+body {
+    
+    font: 10px, sans-serif;
+}
+
+svg {
+    background-color: #ffffff;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: gray;
+    shape-rendering: crispEdges;
+}
+
+.barra {
+    fill: steelblue;
+}
+
+.barra:hover {
+    cursor: pointer;
+    fill: brown;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.ponto {
+    fill: steelblue;
+}
