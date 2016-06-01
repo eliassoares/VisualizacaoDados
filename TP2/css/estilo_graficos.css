@@ -33,5 +33,10 @@ svg {
 
 #container-entrantes-graduandos-chart {
   min-height: 300px;
-  min-width: 600px;
+  min-width: 500px;
+}
+
+#chartEmpregadosGraduadosAno {
+  min-height: 400px;
+  min-width: 500px;
 }
