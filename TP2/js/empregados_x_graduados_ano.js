@@ -30,7 +30,7 @@ $(document).ready(function() {
       return "<strong>Quant:</strong> <span style='color:red'>" + d.value + "</span>";
     });
 
-  svg.call(valor_barra);   // call chama funcao e instanciar d3.tip
+  svg.call(valor_barra);
 
   d3.json("dados/empregos_graduados_computacao_ano.json", function(error, data) {
     if (error) {
@@ -48,16 +48,15 @@ $(document).ready(function() {
         value : +d[name]
       };
     });
-
   });
 
   x0.domain(data.map(function(d) {
     return d.year;
   }));
+
   x1.domain(ageNames).rangeRoundBands([0, x0.rangeBand()]);
   y.domain([0, d3.max(data, function(d) {
     return d3.max(d.ages, function(d) {
-      // d.html(function(d){return d.html});
       return d.value;
     });
   })]);
@@ -92,11 +91,14 @@ $(document).ready(function() {
     .attr("width", x1.rangeBand())
     .attr("x", function(d) {
       return x1(d.name);
-    }).attr("y", function(d) {
+    })
+    .attr("y", function(d) {
       return y(d.value);
-    }).attr("height", function(d) {
+    })
+    .attr("height", function(d) {
       return height - y(d.value);
-    }).style("fill", function(d) {
+    })
+    .style("fill", function(d) {
       return color(d.name);
     })
     .on("mouseover",function(d) {
@@ -128,7 +130,6 @@ $(document).ready(function() {
     .text(function(d) {
       return d;
     });
-
   });
 });
 
