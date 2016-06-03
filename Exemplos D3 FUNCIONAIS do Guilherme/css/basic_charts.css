@@ -1,0 +1,46 @@
+body {
+    font: 10px, sans-serif;
+}
+
+svg {
+    background-color: #ffffff;
+}
+
+.eixo path, .eixo line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.x.eixo path {
+    display: none;
+}
+
+.barra {
+    fill: steelblue;
+}
+
+.barra:hover {
+    cursor: pointer;
+    fill: brown;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.ponto {
+    fill: steelblue;
+}
+
+
+.node {
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
