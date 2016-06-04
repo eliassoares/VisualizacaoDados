@@ -61,6 +61,7 @@ data.forEach(function(d) {
 x0.domain(data.map(function(d) {
   return d.year;
 }));
+
 x1.domain(ageNames).rangeRoundBands([0, x0.rangeBand()]);
 y.domain([0, d3.max(data, function(d) {
   return d3.max(d.ages, function(d) {
@@ -80,7 +81,7 @@ svg.append("g")
 .attr("transform", "rotate(-90)")
 .attr("y", 6).attr("dy", ".71em")
 .style("text-anchor", "end")
-.text("students");
+.text("Estudantes");
 
   var year = svg.selectAll(".year")
 .data(data).enter()

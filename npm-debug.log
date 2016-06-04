@@ -1,0 +1,285 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower-installer' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'bower-installer', null ]
+5 verbose cache add name=undefined spec="bower-installer" args=["bower-installer",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bower-installer',
+6 verbose parsed url   path: 'bower-installer',
+6 verbose parsed url   href: 'bower-installer' }
+7 silly lockFile e75a97de-bower-installer bower-installer
+8 verbose lock bower-installer /home/glutamina/.npm/e75a97de-bower-installer.lock
+9 silly lockFile e75a97de-bower-installer bower-installer
+10 silly lockFile e75a97de-bower-installer bower-installer
+11 verbose addNamed [ 'bower-installer', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 8dda27d5-bower-installer bower-installer@
+14 verbose lock bower-installer@ /home/glutamina/.npm/8dda27d5-bower-installer.lock
+15 silly addNameRange { name: 'bower-installer', range: '*', hasData: false }
+16 verbose url raw bower-installer
+17 verbose url resolving [ 'https://registry.npmjs.org/', './bower-installer' ]
+18 verbose url resolved https://registry.npmjs.org/bower-installer
+19 info trying registry request attempt 1 at 11:44:49
+20 http GET https://registry.npmjs.org/bower-installer
+21 http 200 https://registry.npmjs.org/bower-installer
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     etag: '"1XKQV5LMY8OTCVHPRVU579AGY"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=300',
+22 silly registry.get     'content-length': '44811',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Fri, 03 Jun 2016 14:44:55 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-lax1428-LAX',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1464965095.089053,VS0,VE245',
+22 silly registry.get     vary: 'Accept-Encoding' } ]
+23 silly addNameRange number 2 { name: 'bower-installer', range: '*', hasData: true }
+24 silly addNameRange versions [ 'bower-installer',
+24 silly addNameRange   [ '0.0.3',
+24 silly addNameRange     '0.0.4',
+24 silly addNameRange     '0.0.5',
+24 silly addNameRange     '0.0.6',
+24 silly addNameRange     '0.0.7',
+24 silly addNameRange     '0.0.8',
+24 silly addNameRange     '0.0.9',
+24 silly addNameRange     '0.0.10',
+24 silly addNameRange     '0.0.11',
+24 silly addNameRange     '0.1.0',
+24 silly addNameRange     '0.1.2',
+24 silly addNameRange     '0.2.0',
+24 silly addNameRange     '0.2.1',
+24 silly addNameRange     '0.2.2',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.4.1',
+24 silly addNameRange     '0.4.2',
+24 silly addNameRange     '0.4.3',
+24 silly addNameRange     '0.4.4',
+24 silly addNameRange     '0.4.5',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '0.6.0',
+24 silly addNameRange     '0.6.1',
+24 silly addNameRange     '0.6.2',
+24 silly addNameRange     '0.7.0',
+24 silly addNameRange     '0.7.1',
+24 silly addNameRange     '0.8.0',
+24 silly addNameRange     '0.8.1',
+24 silly addNameRange     '0.8.2',
+24 silly addNameRange     '0.8.3',
+24 silly addNameRange     '0.8.4',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.2.0' ] ]
+25 verbose addNamed [ 'bower-installer', '1.2.0' ]
+26 verbose addNamed [ '1.2.0', '1.2.0' ]
+27 silly lockFile 1db859bc-bower-installer-1-2-0 bower-installer@1.2.0
+28 verbose lock bower-installer@1.2.0 /home/glutamina/.npm/1db859bc-bower-installer-1-2-0.lock
+29 silly lockFile 4350fa0e-taller-bower-installer-1-2-0-tgz https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz
+30 verbose lock https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz /home/glutamina/.npm/4350fa0e-taller-bower-installer-1-2-0-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz',
+31 verbose addRemoteTarball   'f479327b6910e22746db4fa86f61332beca72c0e' ]
+32 info retry fetch attempt 1 at 11:44:50
+33 verbose fetch to= /home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/tmp.tgz
+34 http GET https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz
+35 http 200 https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz
+36 verbose tar unpack /home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/tmp.tgz
+37 silly lockFile 56f16191-90966-0-8571616599801928-package tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package
+38 verbose lock tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package /home/glutamina/.npm/56f16191-90966-0-8571616599801928-package.lock
+39 silly lockFile 42c312be-90966-0-8571616599801928-tmp-tgz tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/tmp.tgz
+40 verbose lock tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/tmp.tgz /home/glutamina/.npm/42c312be-90966-0-8571616599801928-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+48 silly gunzTarPerm extractEntry LICENSE
+49 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+50 silly gunzTarPerm extractEntry Gruntfile.js
+51 silly gunzTarPerm modified mode [ 'Gruntfile.js', 436, 420 ]
+52 silly gunzTarPerm extractEntry bower-installer.js
+53 silly gunzTarPerm modified mode [ 'bower-installer.js', 509, 493 ]
+54 silly gunzTarPerm extractEntry bower-installer.spec.js
+55 silly gunzTarPerm modified mode [ 'bower-installer.spec.js', 436, 420 ]
+56 silly gunzTarPerm extractEntry .travis.yml
+57 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+58 silly gunzTarPerm extractEntry lib/installer.js
+59 silly gunzTarPerm modified mode [ 'lib/installer.js', 436, 420 ]
+60 silly gunzTarPerm extractEntry lib/utils.js
+61 silly gunzTarPerm modified mode [ 'lib/utils.js', 436, 420 ]
+62 silly gunzTarPerm extractEntry test/mapping/bower.json
+63 silly gunzTarPerm modified mode [ 'test/mapping/bower.json', 436, 420 ]
+64 silly gunzTarPerm extractEntry test/basic/bower.json
+65 silly gunzTarPerm modified mode [ 'test/basic/bower.json', 436, 420 ]
+66 silly gunzTarPerm extractEntry test/full/bower.json
+67 silly gunzTarPerm modified mode [ 'test/full/bower.json', 436, 420 ]
+68 silly gunzTarPerm extractEntry test/glob/bower.json
+69 silly gunzTarPerm modified mode [ 'test/glob/bower.json', 436, 420 ]
+70 silly gunzTarPerm extractEntry test/ignore/bower.json
+71 silly gunzTarPerm modified mode [ 'test/ignore/bower.json', 436, 420 ]
+72 silly gunzTarPerm extractEntry test/keyword/bower.json
+73 silly gunzTarPerm modified mode [ 'test/keyword/bower.json', 436, 420 ]
+74 silly gunzTarPerm extractEntry test/bootstrap/bower.json
+75 silly gunzTarPerm modified mode [ 'test/bootstrap/bower.json', 436, 420 ]
+76 silly gunzTarPerm extractEntry test/multiDirGlob/bower.json
+77 silly gunzTarPerm modified mode [ 'test/multiDirGlob/bower.json', 436, 420 ]
+78 silly gunzTarPerm extractEntry test/multiDirGlobWithSameNestedFolder/bower.json
+79 silly gunzTarPerm modified mode [ 'test/multiDirGlobWithSameNestedFolder/bower.json', 436, 420 ]
+80 silly gunzTarPerm extractEntry test/multiMain/bower.json
+81 silly gunzTarPerm modified mode [ 'test/multiMain/bower.json', 436, 420 ]
+82 silly gunzTarPerm extractEntry test/multiPath/bower.json
+83 silly gunzTarPerm modified mode [ 'test/multiPath/bower.json', 436, 420 ]
+84 silly gunzTarPerm extractEntry test/regExp/bower.json
+85 silly gunzTarPerm modified mode [ 'test/regExp/bower.json', 436, 420 ]
+86 silly lockFile 56f16191-90966-0-8571616599801928-package tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package
+87 silly lockFile 56f16191-90966-0-8571616599801928-package tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package
+88 silly lockFile 42c312be-90966-0-8571616599801928-tmp-tgz tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/tmp.tgz
+89 silly lockFile 42c312be-90966-0-8571616599801928-tmp-tgz tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/tmp.tgz
+90 verbose tar pack [ '/home/glutamina/.npm/bower-installer/1.2.0/package.tgz',
+90 verbose tar pack   '/home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package' ]
+91 verbose tarball /home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+92 verbose folder /home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package
+93 silly lockFile 56f16191-90966-0-8571616599801928-package tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package
+94 verbose lock tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package /home/glutamina/.npm/56f16191-90966-0-8571616599801928-package.lock
+95 silly lockFile 0a60a9da-ower-installer-1-2-0-package-tgz tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+96 verbose lock tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz /home/glutamina/.npm/0a60a9da-ower-installer-1-2-0-package-tgz.lock
+97 silly lockFile 56f16191-90966-0-8571616599801928-package tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package
+98 silly lockFile 56f16191-90966-0-8571616599801928-package tar:///home/glutamina/tmp/npm-10810-ygScWgb7/1464965090966-0.8571616599801928/package
+99 silly lockFile 0a60a9da-ower-installer-1-2-0-package-tgz tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+100 silly lockFile 0a60a9da-ower-installer-1-2-0-package-tgz tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+101 silly lockFile bfb0e589-pm-bower-installer-1-2-0-package /home/glutamina/.npm/bower-installer/1.2.0/package
+102 verbose lock /home/glutamina/.npm/bower-installer/1.2.0/package /home/glutamina/.npm/bfb0e589-pm-bower-installer-1-2-0-package.lock
+103 silly lockFile bfb0e589-pm-bower-installer-1-2-0-package /home/glutamina/.npm/bower-installer/1.2.0/package
+104 silly lockFile bfb0e589-pm-bower-installer-1-2-0-package /home/glutamina/.npm/bower-installer/1.2.0/package
+105 verbose tar unpack /home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+106 silly lockFile 916a8a5d-pm-bower-installer-1-2-0-package tar:///home/glutamina/.npm/bower-installer/1.2.0/package
+107 verbose lock tar:///home/glutamina/.npm/bower-installer/1.2.0/package /home/glutamina/.npm/916a8a5d-pm-bower-installer-1-2-0-package.lock
+108 silly lockFile 0a60a9da-ower-installer-1-2-0-package-tgz tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+109 verbose lock tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz /home/glutamina/.npm/0a60a9da-ower-installer-1-2-0-package-tgz.lock
+110 silly gunzTarPerm modes [ '755', '644' ]
+111 silly gunzTarPerm extractEntry package.json
+112 silly gunzTarPerm extractEntry .npmignore
+113 silly gunzTarPerm extractEntry README.md
+114 silly gunzTarPerm extractEntry LICENSE
+115 silly gunzTarPerm extractEntry Gruntfile.js
+116 silly gunzTarPerm extractEntry bower-installer.js
+117 silly gunzTarPerm extractEntry bower-installer.spec.js
+118 silly gunzTarPerm extractEntry .travis.yml
+119 silly gunzTarPerm extractEntry lib/installer.js
+120 silly gunzTarPerm extractEntry lib/utils.js
+121 silly gunzTarPerm extractEntry test/mapping/bower.json
+122 silly gunzTarPerm extractEntry test/basic/bower.json
+123 silly gunzTarPerm extractEntry test/full/bower.json
+124 silly gunzTarPerm extractEntry test/glob/bower.json
+125 silly gunzTarPerm extractEntry test/ignore/bower.json
+126 silly gunzTarPerm extractEntry test/keyword/bower.json
+127 silly gunzTarPerm extractEntry test/bootstrap/bower.json
+128 silly gunzTarPerm extractEntry test/multiDirGlob/bower.json
+129 silly gunzTarPerm extractEntry test/multiDirGlobWithSameNestedFolder/bower.json
+130 silly gunzTarPerm extractEntry test/multiMain/bower.json
+131 silly gunzTarPerm extractEntry test/multiPath/bower.json
+132 silly gunzTarPerm extractEntry test/regExp/bower.json
+133 silly lockFile 916a8a5d-pm-bower-installer-1-2-0-package tar:///home/glutamina/.npm/bower-installer/1.2.0/package
+134 silly lockFile 916a8a5d-pm-bower-installer-1-2-0-package tar:///home/glutamina/.npm/bower-installer/1.2.0/package
+135 silly lockFile 0a60a9da-ower-installer-1-2-0-package-tgz tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+136 silly lockFile 0a60a9da-ower-installer-1-2-0-package-tgz tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+137 verbose chmod /home/glutamina/.npm/bower-installer/1.2.0/package.tgz 644
+138 verbose chown /home/glutamina/.npm/bower-installer/1.2.0/package.tgz [ 1000, 1000 ]
+139 silly lockFile 4350fa0e-taller-bower-installer-1-2-0-tgz https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz
+140 silly lockFile 4350fa0e-taller-bower-installer-1-2-0-tgz https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz
+141 silly lockFile 1db859bc-bower-installer-1-2-0 bower-installer@1.2.0
+142 silly lockFile 1db859bc-bower-installer-1-2-0 bower-installer@1.2.0
+143 silly lockFile 8dda27d5-bower-installer bower-installer@
+144 silly lockFile 8dda27d5-bower-installer bower-installer@
+145 silly resolved [ { name: 'bower-installer',
+145 silly resolved     version: '1.2.0',
+145 silly resolved     preferGlobal: 'true',
+145 silly resolved     description: 'Tool for installing bower dependencies that won\'t include entire repos',
+145 silly resolved     main: 'bower-installer.js',
+145 silly resolved     dependencies:
+145 silly resolved      { 'node-fs': '~0.1.7',
+145 silly resolved        bower: '~1.3.8',
+145 silly resolved        colors: '~0.6.0-1',
+145 silly resolved        lodash: '~0.9.1',
+145 silly resolved        glob: '~3.2.7',
+145 silly resolved        nopt: '~2.1.2',
+145 silly resolved        async: '~0.2.9',
+145 silly resolved        mkdirp: '~0.3.5' },
+145 silly resolved     engines: { node: '>=0.10.0' },
+145 silly resolved     devDependencies:
+145 silly resolved      { grunt: '~0.4.2',
+145 silly resolved        'grunt-jasmine-node': '0.2.1',
+145 silly resolved        async: '~0.2.9',
+145 silly resolved        rimraf: '~2.2.2' },
+145 silly resolved     scripts: { test: 'grunt' },
+145 silly resolved     repository:
+145 silly resolved      { type: 'git',
+145 silly resolved        url: 'https://github.com/blittle/bower-installer' },
+145 silly resolved     keywords: [ 'bower', 'install', 'dependencies' ],
+145 silly resolved     author: { name: 'Bret Little' },
+145 silly resolved     license: 'BSD',
+145 silly resolved     bin: { 'bower-installer': './bower-installer.js' },
+145 silly resolved     readme: 'bower-installer\n===============\n\nTool for installing bower dependencies that won\'t include entire repos. Although Bower works great\nas a light-weight tool to quickly install browser dependencies, it currently does not provide much\nfunctionality for installing specific "built" components for the client.\n\n#Bower installs entire repositories\n\n```javascript\n{\n  "name" : "test",\n  "version": "0.1",\n  "dependencies" : {\n    "backbone" : "latest"\n  }\n}\n```\nIf `bower install` is run on this configuration file, the entire backbone repository will be pulled down\nand copied into a components directory. This repository is quite large, when probably only a built js and css\nfile are needed.  Bower conveniently provides the `bower list --paths` command to list the actual main files associated\nwith the components (if the component doesn\'t define a main, then the whole repository is listed instead).\n\n#Bower Installer\nBower installer provides an easy way for the main files to be installed or moved to one or more locations. Simply add to\nyour bower.json an `install` key and `path` attribute:\n\n```javascript\n{\n  "name" : "test",\n  "version": "0.1",\n  "dependencies" : {\n    "backbone" : "latest"\n  },\n  "install" : {\n    "path" : "some/path"\n  }\n}\n```\n\nInstall bower-installer by executing\n\n```bash\nnpm install -g bower-installer\n```\n\nFrom the terminal in the same directory as your bower.json file, enter:\n```bash\nbower-installer\n```\n\nAfter executing this, `backbone.js` will exist under `some/path` relative to the location of your\nbower.json file.\n\n#Overriding main files\nA lot of registered components for bower do not include bower.json configuration. Therefore, bower does not know\nabout any "main files" and therefore, by default bower-installer doesn\'t know about them either. Bower-installer\ncan override an existing main file path or provide a non-existant one:\n\n```javascript\n{\n  "name" : "test",\n  "version": "0.1",\n  "dependencies" : {\n    "backbone" : "latest",\n    "requirejs" : "latest"\n  },\n  "install" : {\n    "path" : "some/path",\n    "sources" : {\n      "requirejs" : "components/requirejs/require.js"\n    }\n  }\n}\n```\nIf bower installer is run on this configuration, `require.js` and `backbone.js` will all appear under\n`some/path` relative to your bower.json file.\n\n#Install multiple main files\nFor one reason or another you may want to install multiple files from a single component. You can do this by providing\nan `Array` instead of a `String` inside the sources hash:\n\n```javascript\n{\n  "name" : "test",\n  "version": "0.1",\n  "dependencies" : {\n    "jquery-ui" : "latest"\n  },\n  "install" : {\n    "path" : "some/path",\n    "sources" : {\n      "jquery-ui" : [\n        "components/jquery-ui/ui/jquery-ui.custom.js",\n        "components/jquery-ui/themes/start/jquery-ui.css"\n      ]\n    }\n  }\n}\n```\n\n#Install files to multiple locations\nFiles can be installed to multiple locations based upon file type. Do so by modifying the `path` to be a map of file-type\n locations. Example:\n ```javascript\n{\n  "name" : "test",\n  "version": "0.1",\n  "dependencies" : {\n    "jquery-ui" : "latest"\n  },\n  "install" : {\n    "path" : {\n      "css": "src/css",\n      "js": "src/js"\n    },\n    "sources" : {\n      "jquery-ui" : [\n        "components/jquery-ui/ui/jquery-ui.custom.js",\n        "components/jquery-ui/themes/start/jquery-ui.css"\n      ]\n    }\n  }\n}\n```\n',
+145 silly resolved     readmeFilename: 'README.md',
+145 silly resolved     bugs: { url: 'https://github.com/blittle/bower-installer/issues' },
+145 silly resolved     _id: 'bower-installer@1.2.0',
+145 silly resolved     dist: { shasum: '58d8f6482787dda33378eb2f881db0a80ef3b3f7' },
+145 silly resolved     _from: 'bower-installer@',
+145 silly resolved     _resolved: 'https://registry.npmjs.org/bower-installer/-/bower-installer-1.2.0.tgz' } ]
+146 info install bower-installer@1.2.0 into /usr/local/lib
+147 info installOne bower-installer@1.2.0
+148 info /usr/local/lib/node_modules/bower-installer unbuild
+149 verbose tar unpack /home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+150 silly lockFile 8cdb7d17-lib-node-modules-bower-installer tar:///usr/local/lib/node_modules/bower-installer
+151 verbose lock tar:///usr/local/lib/node_modules/bower-installer /home/glutamina/.npm/8cdb7d17-lib-node-modules-bower-installer.lock
+152 silly lockFile 0a60a9da-ower-installer-1-2-0-package-tgz tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz
+153 verbose lock tar:///home/glutamina/.npm/bower-installer/1.2.0/package.tgz /home/glutamina/.npm/0a60a9da-ower-installer-1-2-0-package-tgz.lock
+154 silly gunzTarPerm modes [ '755', '644' ]
+155 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+155 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+155 error   errno: 3,
+155 error   code: 'EACCES',
+155 error   path: '/usr/local/lib/node_modules',
+155 error   fstream_type: 'Directory',
+155 error   fstream_path: '/usr/local/lib/node_modules/bower-installer',
+155 error   fstream_class: 'DirWriter',
+155 error   fstream_stack:
+155 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+155 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+155 error      'Object.oncomplete (fs.js:107:15)' ] }
+156 error Please try running this command again as root/Administrator.
+157 error System Linux 3.19.0-58-generic
+158 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "bower-installer"
+159 error cwd /scratch/guisouza/Aptana/tpgit/VisualizacaoDados
+160 error node -v v0.10.25
+161 error npm -v 1.3.10
+162 error path /usr/local/lib/node_modules
+163 error fstream_path /usr/local/lib/node_modules/bower-installer
+164 error fstream_type Directory
+165 error fstream_class DirWriter
+166 error code EACCES
+167 error errno 3
+168 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+169 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+169 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+169 error fstream_stack Object.oncomplete (fs.js:107:15)
+170 verbose exit [ 3, true ]

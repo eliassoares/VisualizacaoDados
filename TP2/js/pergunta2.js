@@ -17,7 +17,7 @@ $( document ).ready(function() {
 
     var color = d3.scale.ordinal().range(["#669f", "#1a66ff"]);
 
-    var xAxis = d3.svg.axis().scale(x0).orient("bottom");
+    var xAxis = d3.svg.axis().scale(x0).orient("bottom").tickFormat("").ticks(false); // acrescentei o ticks com falso na gambiarra para retirar os rotulos das legendas no eixo x
 
     var yAxis = d3.svg.axis().scale(y).orient("left").tickFormat(d3.format(".2s"));
 
@@ -34,7 +34,7 @@ $( document ).ready(function() {
         .html(function(d)
         {
             // console.log(d);
-            return "<strong>Quant:</strong> <span style='color:red'>" + d.value + "</span>";
+            return d.faculdade+"<br/><strong>Quant:</strong> <span style='color:red'>" + d.value + "</span>";
         });
 
     svg.call(valor_barra);   // call chama funcao e instanciar d3.tip
@@ -51,8 +51,8 @@ $( document ).ready(function() {
             d.dados = alunos.map(function(name) {
                 return {
                     name : name,
-                    value : +d[name]
-
+                    value : +d[name],
+                    faculdade: d["Faculdade"]   // acrescentei faculadade para ter a faculdade em dados para jogar para o tip
                 };
             });
 
@@ -79,7 +79,7 @@ $( document ).ready(function() {
             .attr("transform", "rotate(-90)")
             .attr("y", 6).attr("dy", ".71em")
             .style("text-anchor", "end")
-            .text("students");
+            .text("Estudantes");
 
         var year = svg.selectAll(".year")
             .data(data).enter()
@@ -121,6 +121,7 @@ $( document ).ready(function() {
             .append("g")
             .attr("class", "legend")
             .attr("transform", function(d, i) {
+                console.log("translate(0," + i * 20 + ")");
                 return "translate(0," + i * 20 + ")";
             });
 
@@ -135,6 +136,8 @@ $( document ).ready(function() {
             .attr("y", 9).attr("dy", ".35em")
             .style("text-anchor", "end")
             .text(function(d) {
+              //  alert(d);
+                //console.log(d);
                 return d;
             });
 

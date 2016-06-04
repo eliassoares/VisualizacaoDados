@@ -40,3 +40,5 @@ svg {
   min-height: 400px;
   min-width: 500px;
 }
+
+/*.x.axis .tick { display: none; }*/
