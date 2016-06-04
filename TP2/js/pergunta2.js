@@ -131,12 +131,13 @@ $( document ).ready(function() {
             .attr("height", 18)
             .style("fill", color);
 
-        legend.append("text")
-            .attr("x", width - 719)
-            .attr("y", 9).attr("dy", ".35em")
+         legend.append("text")
+            .attr("x", width - 19)
+            .attr("y", 9)
             .style("text-anchor", "end")
+            .style("fill", color)
             .text(function(d) {
-              //  alert(d);
+                //  alert(d);
                 //console.log(d);
                 return d;
             });
