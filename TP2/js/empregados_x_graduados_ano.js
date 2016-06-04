@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
   let margin = {
     top : 20,
@@ -14,6 +16,7 @@ $(document).ready(function() {
   let color = d3.scale.ordinal().range(["#6699ff", "#1a66ff"]);
   let xAxis = d3.svg.axis().scale(x).orient("bottom");
   let yAxis = d3.svg.axis().scale(y).orient("left").tickFormat(d3.format(".2s"));
+  let svg = d3.select("#chartEmpregadosGraduadosAno");
 
   // Carga de dados
   d3.json("dados/empregos_graduados_computacao_ano.json", function(error, data) {
@@ -23,10 +26,6 @@ $(document).ready(function() {
 
     let dadosColetados = d3.keys(data[0]);
 
-    /* Por algum motivo, este código cria um atributo dentro de cada objeto em data...
-     * QUE É UM ARRAY CONTENDO OS ATRIBUTOS DO OBJETO!!!
-     * Ele deve usar isso para ordenar, porque senão é insanidade.
-     */
     data.forEach(function(d) {
       d.arrayDados = dadosColetados.map(function(name) {
         return {
@@ -40,21 +39,38 @@ $(document).ready(function() {
       return d.ano;
     }));
 
-    y.domain([0, d3.max(data, function(d) {
-      return d3.max(d.arrayDados, function(d) {
-        return d.value;
-      });
-    })]);
+    y.domain(d3.extent(data, function(d) {
+      return d.value;
+    }));
 
     // Dados para as linhas
-    var linhaEntrantes = d3.svg.line()
+    let linhaEntrantes = d3.svg.line()
       .x(function(d) {return x(d.ano); })
-      .y(function(d) {return y(d.graduados); });
+      .y(function(d) {return d.graduados; });
 
-    // << Definir segunda linha aqui >>
+    // Eixo x
+    svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
 
-    // 
+    // Eixo y
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Graduandos");
 
-    });
-});
+    // Linha
+    svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", linhaEntrantes);
+
+  }); // Fim d3.json
+}); // Fim $(document).ready()
 
