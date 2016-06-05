@@ -91,7 +91,6 @@ $(document)
             .attr("class",
                 "year")
             .attr("transform", function(d) {
-              console.log(d.year, x0(d.year));
               return "translate(" + x0(d.year) + ",0)";
             });
         year.selectAll("rect")
@@ -174,7 +173,6 @@ $(document)
           var myx = ordenar(attribute, order);
           transition.selectAll('.year')
               .attr("asdf", function(d) {
-                console.log(d.year, x0(d.year));
               });
           transition.selectAll('.x.axis')
               .call(xAxis);
@@ -183,32 +181,34 @@ $(document)
                 return "translate(" + myx(d.year) + ",0)";
               });
         }
-        $('[name="categoria"]')
-            .click(function(e) {
-              var categoria = $('[name="categoria"]:checked')
-                  .val();
-              var ordem = $('[name="ordem"]:checked');
-              if (ordem === []) {
-                ordem = "asc";
+        $('[name="categoria"]').click(function(e) {
+
+              var categoria = $('[name="categoria"]:checked').val();
+              var ordem = $('[name="ordem"]:checked').val();
+
+              if (!ordem) {
+                  $('[name="ordem"]')[0].click();
               } else {
-                ordem = $('[name="ordem"]:checked')
-                    .val();
+                ordem = $('[name="ordem"]:checked').val();
               }
+
               change(categoria, ordem);
+
             });
-        $('[name="ordem"]')
-            .click(function(e) {
-              var ordem = $('[name="ordem"]:checked')
-                  .val();
-              var categoria = $('[name="categoria"]:checked');
-              if (categoria === []) {
-                categoria = "entrants";
+        $('[name="ordem"]').click(function(e) {
+
+              var ordem = $('[name="ordem"]:checked').val();
+              var categoria = $('[name="categoria"]:checked').val();
+
+              if (!categoria) {
+                  $('[name="categoria"]')[0].click();
               }
               else {
-                categoria = $('[name="categoria"]:checked')
-                    .val();
+                categoria = $('[name="categoria"]:checked').val();
               }
+
               change(categoria, ordem);
+
             });
         $("#reverter")
             .click(function(e) {
