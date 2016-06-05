@@ -2,7 +2,7 @@ $( document ).ready(function() {
 // definicao do posicionamento do grafico d;
 var margin = {top: 20, right: 270, bottom: 30, left: 65},
     width = 560 - margin.left - margin.right,
-    height = 380 - margin.top - margin.bottom;
+    height = 210 - margin.top - margin.bottom;
 
 // normalmente e %Y%M%D mas estou usando apenas ano;
 var parseano = d3.time.format("%Y").parse;
@@ -86,7 +86,7 @@ d3.csv("./dados/graduados_empregados.csv", function(error, data){
       .attr("transform", "rotate(-90)") // para colocar a escrita  Estudantes ou Vagas na vertical 
       .attr("y", 4) // distancia para a escrita
       .attr("dy", ".71em") // deslocamento para a escrita
-	.attr("dx", "-4em")
+	.attr("dx", "1em")
       .style("text-anchor", "end")
       .text("Estudantes ou Vagas");
 
