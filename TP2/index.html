@@ -55,7 +55,7 @@
         <!-- /.row -->
     </div>
     <div class="row">
-        <div class="col-lg-6 center-block">
+        <div class="col-lg-5 center-block">
             <!-- Pergunta 3: Faculdades com maior diferença ingressantes/concluintes -->
             <div id="pergunta3">
                 <h4>Faculdades com maior diferença ingressantes/concluintes</h4>
@@ -64,22 +64,32 @@
             </div>
             <!-- /.col-lg-6 -->
         </div>
-        <div class="col-lg-6 center-block">
+        <div class="col-lg-7 center-block">
             <div id="entrantes_graduandos">
                 <h4>Entrantes Graduados</h4>
 
-                <button class="btn btn-primary" id="reverter">Reverter</button> 
-                <div class="radio"> 
-                    <label><input type="radio" name="categoria" value="entrants">Ingressantes</label> 
-                    <label><input type="radio" name="categoria" value="graduates">Graduados</label> 
-                </div> 
-                <div class="radio"> 
-                    <label><input type="radio" name="ordem" value="asc">Ascendente</label> 
-                    <label><input type="radio" name="ordem" value="desc">Descendente</label> 
+                <div class="col-md-8">
+                    <svg id="container-entrantes-graduandos-chart"></svg>
+                    <script async src="js/entrantes_graduantes_comp.js"></script>
                 </div>
 
-                <svg id="container-entrantes-graduandos-chart"></svg>
-                <script async src="js/entrantes_graduantes_comp.js"></script>
+                <div class="col-md-4" >
+                    <button class="btn btn-primary btn-sm" id="reverter">Reverter</button> 
+                    <div class="radio"> 
+                        <label class="text-left"><input type="radio" name="categoria" value="entrants">Ingressantes</label> 
+                    </div> 
+                    <div class="radio" style="margin-top:-20px"> 
+                        <label class="text-left"><input type="radio" name="categoria" value="graduates">Graduados</label> 
+                    </div>
+                    <div class="">---------------------</div>
+                    <div class="radio"> 
+                        <label class="text-left"><input type="radio" name="ordem" value="asc">Ascendente</label> 
+                    </div>
+                    <div class="radio"> 
+                        <label class="text-left"><input type="radio" name="ordem" value="desc">Descendente</label> 
+                    </div>
+                </div>
+
             </div>
             <!-- /.col-lg-6 -->
         </div>
