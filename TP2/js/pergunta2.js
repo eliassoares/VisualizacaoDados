@@ -6,8 +6,8 @@ $( document ).ready(function() {
             bottom : 30,
             left : 40
         },
-        width = 660 - margin.left - margin.right,
-        height = 490 - margin.top - margin.bottom;
+        width = 440 - margin.left - margin.right,
+        height = 240 - margin.top - margin.bottom;
 
     var x0 = d3.scale.ordinal().rangeRoundBands([0, width], .1);
 
