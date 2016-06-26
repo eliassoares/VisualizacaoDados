@@ -4,6 +4,7 @@ body {
 
 svg {
     background-color: #ffffff;
+    border-radius: 5px;
 }
 
 .axis path, .axis line {
@@ -32,13 +33,30 @@ svg {
 }
 
 #container-entrantes-graduandos-chart {
-  min-height: 300px;
+  min-height: 250px;
   min-width: 500px;
 }
 
 #chartEmpregadosGraduadosAno {
-  min-height: 400px;
+  min-height: 250px;
   min-width: 500px;
+}
+
+#chartPergunta3 {
+    min-height: 250px;
+    min-width: 500px;
+}
+
+.d3-tip {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.tip-value {
+    color: lightblue;
+    font-size: large;
 }
 
 /*.x.axis .tick { display: none; }*/

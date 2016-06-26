@@ -34,7 +34,7 @@ $( document ).ready(function() {
         .html(function(d)
         {
             // console.log(d);
-            return d.faculdade+"<br/><strong>Quant:</strong> <span style='color:red'>" + d.value + "</span>";
+            return "<h5>"+ d.faculdade+"</h5>Quantidade: <span class='tip-value'>" + d.value + "</span>";
         });
 
     svg.call(valor_barra);   // call chama funcao e instanciar d3.tip

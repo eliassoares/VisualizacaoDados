@@ -39,7 +39,7 @@ $(document)
           .offset([-10, 0])
           .html(function(d)  {  // console.log(d);
 
-            return "<strong>Quant:</strong> <span style='color:red'>" + d.value + "</span>";
+            return "<strong>Quantidade:</strong> <span class='tip-value'>" + d.value + "</span>";
           });
       svg.call(valor_barra); // call chama funcao e instanciar d3.tip
 
@@ -187,7 +187,7 @@ $(document)
               var ordem = $('[name="ordem"]:checked').val();
 
               if (!ordem) {
-                  $('[name="ordem"]')[0].click();
+                  $('[name="ordem"]')[1].click();
               } else {
                 ordem = $('[name="ordem"]:checked').val();
               }
