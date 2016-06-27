@@ -35,17 +35,29 @@ d3.json("dados/pergunta3.json", function(error, data){
               .data(ingressantes)
               .enter()
               .append("g")
-              .attr("transform", function(d, i) {return "translate(0," + i * barHeight + ")";});
+              .attr("transform", function(d, i) {return "translate(20," + i * barHeight + ")";});
 
   bar.append("rect")
     .attr("width", x)
     .attr("height", barHeight - 1);
 
   bar.append("text")
-    .attr("x", function(d) {return x(d) - 3;})
+    .attr("x", function(d) {return x(d);})
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
     .text(function(d) {return d;});
+
+  svgContainer.append("text")
+      .attr("y", barHeight / 2)
+      .attr("dy", ".55em")
+      .attr("transform", "translate(150,200)")
+      .text('Batatinha quando nasce');
+
+  svgContainer.append("text")
+      .attr("transform", "rotate(90)")
+      .attr("dy", "-.15em")
+      .attr("dx", "1.75em")
+      .text('Se esparrama pelo chão');
 
 });
 }());
