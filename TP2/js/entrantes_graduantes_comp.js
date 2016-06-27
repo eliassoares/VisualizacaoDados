@@ -14,7 +14,7 @@ $(document)
       var y = d3.scale.linear()
           .range([height, 0]);
       var color = d3.scale.ordinal()
-          .range(["#6699ff", "#1a66ff"]);
+          .range(["#1a66ff","#ee6913"]);
       var xAxis = d3.svg.axis()
           .scale(x0)
           .orient("bottom");
@@ -140,9 +140,9 @@ $(document)
             .style("fill", color);
 
           legend.append("text")
-            .attr("x", width + 44)
+            .attr("x", width + 4)
               .style("fill", color)
-            .attr("y", 9)
+            .attr("y", -29)
             .attr("dy", ".35em")
             .style(
                 "text-anchor", "end")

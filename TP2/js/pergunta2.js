@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
     var y = d3.scale.linear().range([height, 0]);
 
-    var color = d3.scale.ordinal().range(["#669f", "#1a66ff"]);
+    var color = d3.scale.ordinal().range(["#1a66ff","#ee6913"]);
 
     var xAxis = d3.svg.axis().scale(x0).orient("bottom").tickFormat("").ticks(false); // acrescentei o ticks com falso na gambiarra para retirar os rotulos das legendas no eixo x
 
