@@ -79,7 +79,7 @@ $( document ).ready(function() {
             .attr("transform", "rotate(-90)")
             .attr("y", 6).attr("dy", ".71em")
             .style("text-anchor", "end")
-            .text("Studants");
+            .text("Students");
 
         var year = svg.selectAll(".year")
             .data(data).enter()

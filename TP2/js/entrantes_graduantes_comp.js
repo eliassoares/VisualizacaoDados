@@ -1,13 +1,13 @@
 $(document)
     .ready(function() {
       var margin = {
-            top: 20,
+            top: 40,
             right: 20,
             bottom: 30,
             left: 40
           },
-          width = 360 - margin.left - margin.right,
-          height = 250 - margin.top - margin.bottom;
+          width = 440 - margin.left - margin.right,
+          height = 240 - margin.top - margin.bottom;
       var x0 = d3.scale.ordinal()
           .rangeRoundBands([0, width], .1);
       var x1 = d3.scale.ordinal();
