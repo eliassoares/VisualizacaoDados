@@ -138,8 +138,10 @@ $(document)
             .attr("width", 18)
             .attr("height", 18)
             .style("fill", color);
-        legend.append("text")
-            .attr("x", width - 719)
+
+          legend.append("text")
+            .attr("x", width + 44)
+              .style("fill", color)
             .attr("y", 9)
             .attr("dy", ".35em")
             .style(
