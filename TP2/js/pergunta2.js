@@ -75,7 +75,7 @@ $( document ).ready(function() {
 
         svg.append('text')
             .attr("text-anchor", "middle")
-            .attr("transform", "translate(180," + 220 + ")")
+            .attr("transform", "translate(180 ," + 220 + ")")
             .text("universities");
 
         svg.append("g")
