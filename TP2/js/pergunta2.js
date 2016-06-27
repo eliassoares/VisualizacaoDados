@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
     var y = d3.scale.linear().range([height, 0]);
 
-    var color = d3.scale.ordinal().range(["#1a66ff","#ee6913"]);
+    var color = d3.scale.ordinal().range(["#ee6913","#1a66ff"]);
 
     var xAxis = d3.svg.axis().scale(x0).orient("bottom").tickFormat("").ticks(false); // acrescentei o ticks com falso na gambiarra para retirar os rotulos das legendas no eixo x
 
@@ -73,13 +73,19 @@ $( document ).ready(function() {
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis);
 
+        svg.append('text')
+            .attr("text-anchor", "middle")
+            .attr("transform", "translate(180," + 220 + ")")
+            .text("universities");
+
         svg.append("g")
             .attr("class", "y axis")
             .call(yAxis).append("text")
             .attr("transform", "rotate(-90)")
-            .attr("y", 6).attr("dy", ".71em")
+            .attr("y", 6)
+            .attr("dy", ".76em")
             .style("text-anchor", "end")
-            .text("Students");
+            .text("students");
 
         var year = svg.selectAll(".year")
             .data(data).enter()
