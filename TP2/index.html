@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Visualização de Dados | Trabalho Prático 3</title>
+    <title>Data Visualization | Final Work</title>
     <script src="bower_components/d3/d3.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/d3-tip/index.js"></script>
@@ -25,7 +25,7 @@
     </div>
 </nav>
 <div class="container">
-    <h1>Análise da Educação Superior e mercado em Computação</h1>
+    <h1>Computing: A market and higher education analysis</h1>
     <div class="row">
 
         <div class="col-lg-12 center-block text-center well">
@@ -33,16 +33,18 @@
             <!-- Gráfico de linhas -->
             <div id="empregados_x_graduados_ano" class="col-md-8">
                 <h4>
-                    Empregados e graduados por ano
+                    Employees and graduates per year
                     <button type="button" class="btn btn-link btn-" data-toggle="modal" data-target="#modal1">Ver dados</button>
                 </h4>
                 <svg id="chartEmpregadosGraduadosAno"></svg>
                 <script async src="js/linhas_empregados_graduados.js"></script>
             </div>
             <div class="info col-md-4">
-                <h4>Explicações</h4>
+                <h4>Students and jobs</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aspernatur aut dolore eveniet in inventore iure modi, nobis odit, officia reiciendis vel. Atque culpa dolore odio omnis repudiandae voluptas.
+                The number of jobs in computing seems to be high (and going up!) compared to the students,
+                specially graduating students, the number of which is seen to be low. How can one account
+                for it?
                 </p>
             </div>
 
@@ -51,14 +53,16 @@
 
         <div class="col-lg-12 center-block text-center well">
             <div id="entrantes_graduandos" class="col-md-8">
-                <h4>Entrantes e Graduados em computação</h4>
+                <h4>Students entering and graduating</h4>
 
                 <div class="col-md-12">
                     <div class="col-md-1"></div>
                     <div class="col-md-8 text-right">
                         <div class="radio"> 
-                            <label class="text-left"><input type="radio" name="categoria" value="entrants">Ingressantes</label> 
-                            <label class="text-left"><input type="radio" name="categoria" value="graduates">Graduados</label> 
+                          <label class="text-left"><input type="radio" name="categoria" value="entrants">
+                            Entering</label> 
+                          <label class="text-left"><input type="radio" name="categoria" value="graduates">
+                            Graduating</label> 
                         </div> 
                         <div>
 
@@ -81,9 +85,11 @@
 
             </div>
             <div class="info col-md-3">
-                <h4>Explicações</h4>
+                <h4>The selected few</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aspernatur aut dolore eveniet in inventore iure modi, nobis odit, officia reiciendis vel. Atque culpa dolore odio omnis repudiandae voluptas.
+                  In a closer look to the entering and graduating students is interesting to see
+                  the disparity among them, and how this situation lasts during a long period
+                  of time, not accounting for some specific change.
                 </p>
             </div>
             <!-- /.col-lg-6 -->
@@ -92,14 +98,17 @@
         <div class="col-lg-12 center-block text-center well">
             <!-- Pergunta 3: Faculdades com maior diferença ingressantes/concluintes -->
             <div id="pergunta3" class="col-md-8">
-                <h4>Faculdades com maior diferença ingressantes/concluintes</h4>
+                <h4>Schools with the biggest difference to entrants/graduates</h4>
                 <svg id="chartPergunta3"></svg>
                 <script async src="js/pergunta3.js"></script>
             </div>
             <div class="info col-md-4">
-                <h4>Explicações</h4>
+                <h4>The gap</h4>
                 <p>
-                    Alguma alma me explica porque esse gráfico mostra só os números dos entrantes??? E qual a diferença desse gráfico pelo o que vem logo abaixo???
+                  So, it's seen that there are a lot of jobs in the computing field. Would that be a
+                  problem with the schools, then? Take a look at the gap between entrants and graduates,
+                  by the top ten schools that have this difference on the period. Some account for most
+                  drops.
                 </p>
             </div>
             <!-- /.col-lg-6 -->
@@ -107,7 +116,7 @@
 
         <div class="col-lg-12 center-block text-center well">
             <div id="pergunta2" class="col-md-8">
-                <h4>10 universidades de maior razão graduandos por entrantes.</h4>
+                <h4>Looking from above</h4>
                 <script async src = "js/pergunta2.js"></script>
             </div>
             <div class="info col-md-4">
@@ -119,8 +128,6 @@
             <!-- /.col-lg-6 -->
         </div>
 
-
-        
         <!-- /.row -->
     </div>
     <div class="row">
