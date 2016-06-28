@@ -7,6 +7,14 @@ svg {
     border-radius: 5px;
 }
 
+.active {
+    color: green;
+}
+
+.not-active {
+    color: black;
+}
+
 .axis path, .axis line {
     fill: none;
     stroke: gray;

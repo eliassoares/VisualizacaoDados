@@ -55,16 +55,20 @@
 
                 <div class="col-md-12">
                     <div class="col-md-1"></div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 text-right">
                         <div class="radio"> 
                             <label class="text-left"><input type="radio" name="categoria" value="entrants">Ingressantes</label> 
                             <label class="text-left"><input type="radio" name="categoria" value="graduates">Graduados</label> 
-                            <span><i class="glyphicon glyphicon-minus"></i></span>
-                            <label class="text-left"><input type="radio" name="ordem" value="asc">Ascendente</label> 
-                            <label class="text-left"><input type="radio" name="ordem" value="desc">Descendente</label> 
                         </div> 
+                        <div>
+
+                        </div>
                     </div>
                     <div class="col-md-2">
+                        <span id="asc" style="cursor: pointer;font-size: larger" onclick='clickAsc()'><i class="glyphicon glyphicon-sort-by-attributes"></i></span>
+                        <span id="desc" style="cursor: pointer;font-size: larger" onclick='clickDesc()'><i class="glyphicon glyphicon-sort-by-attributes-alt"></i></span>
+                        <label style="display: none" id="ordemAsc" class="text-left"><input class="toOrder" type="radio" name="ordem" value="asc">Ascendente</label> 
+                        <label style="display: none" id="ordemDesc" class="text-left"><input class="toOrder" type="radio" name="ordem" value="desc">Descendente</label>
                         <button class="btn btn-primary btn-sm" id="reverter"><i class="glyphicon glyphicon-refresh"></i></button> 
                     </div>
                 </div>
